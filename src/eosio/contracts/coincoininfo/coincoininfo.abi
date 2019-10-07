@@ -1,0 +1,270 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "addcandy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "link",
+                    "type": "string"
+                },
+                {
+                    "name": "info",
+                    "type": "string"
+                },
+                {
+                    "name": "reward",
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "end_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "addpost",
+            "base": "",
+            "fields": [
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "title_link",
+                    "type": "string"
+                },
+                {
+                    "name": "author",
+                    "type": "string"
+                },
+                {
+                    "name": "author_link",
+                    "type": "string"
+                },
+                {
+                    "name": "category",
+                    "type": "string"
+                },
+                {
+                    "name": "time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "addtoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "type": "string"
+                },
+                {
+                    "name": "logo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "candytable",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "link",
+                    "type": "string"
+                },
+                {
+                    "name": "info",
+                    "type": "string"
+                },
+                {
+                    "name": "reward",
+                    "type": "string"
+                },
+                {
+                    "name": "start_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "end_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delcandy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delpost",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "deltoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "posttable",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "title_link",
+                    "type": "string"
+                },
+                {
+                    "name": "author",
+                    "type": "string"
+                },
+                {
+                    "name": "author_link",
+                    "type": "string"
+                },
+                {
+                    "name": "category",
+                    "type": "string"
+                },
+                {
+                    "name": "time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "tokentable",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "type": "string"
+                },
+                {
+                    "name": "logo",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addcandy",
+            "type": "addcandy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addpost",
+            "type": "addpost",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addtoken",
+            "type": "addtoken",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delcandy",
+            "type": "delcandy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delpost",
+            "type": "delpost",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deltoken",
+            "type": "deltoken",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "candytable",
+            "type": "candytable",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "posttable",
+            "type": "posttable",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "tokentable",
+            "type": "tokentable",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
